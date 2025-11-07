@@ -34,7 +34,7 @@ We explore informality from a multidimensional perspective in three stages using
 
 ## 
 
-::: {style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 80vh; text-align: center; padding: 0;"}
+::: {style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: 40vh; text-align: center; padding-top: 65px;"}
 <h2 style="color: #292A62; margin-bottom: 5px;">
 
 Chapter 1: Understanding informal employment in Chile
@@ -157,37 +157,41 @@ where,
 </div>
 
 
-## Results: Full Sample
+## {style="padding-top: 0 !important; margin-top: 0 !important;"}
 
 <div style="margin-top:-30px margin-right:-50px;">
 
 :::: {.columns}
 
 ::: {.column width="70%"}
-<div style="text-align: center;">
+<div style="text-align: left;">
 
-![](figures/ch1_full_sample.jpg){width="70%"}
+![](figures/ch1_full_sample.jpg){width="85%"}
 
-<figcaption style="font-size: 0.9em; margin-top: 10px; color: #2c2c2f;">
-Full sample
-</figcaption>
 
 </div>
 :::
 ::: {.column width="30%"}
 
 <div style="font-size: 0.8em; line-height: 1.4;">
-Increase probability of working informally:
+
+<h2 style="color: #292A62;">
+
+Full Sample
+
+</h2>
+
+**Increase** probability of working informally:
 
 -   Annulled $\times$ Illiteracy
 -   Annulled $\times$ Other community service activities
 -   Annulled $\times$ Manufacturing Industries
 
-Decrease probability of working informally:
+**Decrease** probability of working informally:
 
 -   Annulled $\times$ Large enterprise
 -   Annulled $\times$ Number of children under six years
--   Annulled $\times$ Teaching]
+-   Annulled $\times$ Teaching
 </div>
 
 :::
@@ -212,11 +216,11 @@ Cross-category interactions consistently **decrease** the probability of working
 
 Marital Status $\times$ Contract Type **increases** the probability of working informally for women.\
 
-Policy interventions should take account heterogeneity of subgroups.
+Policy interventions should take account heterogeneity of subgroups for the distributive efficiency of public resources.
 
 ## 
 
-::: {style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 80vh; text-align: center; padding: 0;"}
+::: {style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: 40vh; text-align: center; padding-top: 65px;"}
 <h2 style="color: #292A62; margin-bottom: 5px;">
 
 Chapter 2: Wage gap determinants between formal and informal workers and wage structure in Chile
@@ -244,7 +248,7 @@ Wage penalty informal workers
 
 ## Motivation and Literature Review
 
-::: {style="display: flex; flex-direction: column; justify-content: center; min-height: 70vh;"}
+::: {style="display: flex; flex-direction: column; justify-content: flex-start; min-height: 70vh; padding-top: 50px"}
 Wage gap between formal and informal workers
 
 -   Formal workers earn more than informal workers [@Chen2013; @Bargain2011EarningsAfrica; @Nordman2016; @ramonicolombia2021; @Williams2016]
@@ -451,17 +455,17 @@ For a variable $j$
 
 
 
-## Results
+## {style="padding-top: 0 !important; margin-top: 0 !important;"}
 
 :::: {.columns}
 
-::: {.column width="70%"}
+::: {.column width="65%"}
 ![](figures/ch2_all_variables.png){width="100%"}
 :::
 
-::: {.column width="30%"}
+::: {.column width="35%"}
 
-<div style="font-size: 0.6em; line-height: 1.4;">
+<div style="font-size: 0.75em; line-height: 1.3;">
 Increase wage gap:
 
 -  Both receive wage premium: Dual nationlity $\times$ Illiteracy.
@@ -477,7 +481,7 @@ Formal workers:
 
 Informal workers:
 
-- Increase hourly wage: Transportation sector $\times$ Cohab. w/civil union.
+- Increase hourly wage: Transportation sector $\times$ Cohab. with civil union.
 - Decrease hourly wage: Medium-sized enterprise $\times$ Other sexual orientation
 
  
@@ -493,11 +497,13 @@ Informal workers:
 
 ## Conlcusions
 
-Nonlinearity relevant in the log hourly wage generation process.
+Nonlinearity relevant in the wage structure of formal workers amd informal workers. 
+
+Wage gap between formal and informal workers is mainly explained by nonlinearities.
 
 ## 
 
-::: {style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 80vh; text-align: center; padding: 0;"}
+::: {style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: 40vh; text-align: center; padding-top: 65px;"}
 <h2 style="color: #292A62; margin-bottom: 5px;">
 
 Chapter 3: Wage structure and wage gap determinants between formal and informal workers by status in employment,<br>Chile 2004-2015
@@ -642,16 +648,22 @@ $$ where,
 
 </div>
 
-## <a href="plotly_heatmap_all.html" target="_blank">Results for employeers</a>
+## {style="padding-top: 0 !important; margin-top: 0 !important;"}
 
 :::: {.columns}
 
 ::: {.column width="70%"}
-![](figures/ch3_empleadores.png){width="100%"}
+![](figures/ch3_empleadores.png){width="90%"}
 :::
 
 ::: {.column width="30%"}
-<div style="font-size: 0.6em; line-height: 1.4;">
+<div style="font-size: 0.75em; line-height: 1.3;">
+<h2 style="color: #292A62;">
+
+Employers
+
+</h2>
+
 Increase wage gap:
 
 -  Both receive wage premium: Male $\times$ Head of household.

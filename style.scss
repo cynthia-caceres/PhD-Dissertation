@@ -25,7 +25,7 @@ $example-color: #14B03D !default;
 $body-bg: #FFFFFF !default;
 $body-color: $body-fg-color !default; 
 
-$header-bg-color: $primary-color !default;
+$header-bg-color: transparent !default;
 $selection-bg-color: #292A62 !default;
 $selection-fcolor: #fff !default;
 $dark-bg-code-color: $example-color !default;
@@ -228,12 +228,12 @@ $authors-block-gap: 4em !default;
   
   .footer,
   .slide-number {
-    color: #604c38;
+    color: #B2544F;
   }
   
   .slide aside {
     bottom: 250px ;
-    color: #604c38;
+    color: #B2544F;
   }
   
   section[data-background-image] {
@@ -339,3 +339,4 @@ iframe {
     overflow: visible !important;
   }
 }
+
