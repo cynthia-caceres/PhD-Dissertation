@@ -1,11 +1,11 @@
 ---
 title: "Three essays on the evaluation of informality in the Chilean labor market using high-dimensional methods"
-subtitle: Dissertation Defense
+subtitle: Dissertation
 author:
   - name: Cynthia Cáceres
     affiliations: PhD. Student<br>Universidad de Talca
   - name: Andrés Riquelme
-    affiliations: Supervisor<br>Universidad de Talca
+    affiliations: Advisor<br>Universidad de Talca
 format: 
   metropolis-beamer-revealjs:
     reveal_options:
@@ -500,6 +500,8 @@ Informal workers:
 Nonlinearity relevant in the wage structure of formal workers amd informal workers. 
 
 Wage gap between formal and informal workers is mainly explained by nonlinearities.
+
+Public policies 
 
 ## 
 
