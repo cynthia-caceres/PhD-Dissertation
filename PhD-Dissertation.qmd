@@ -59,12 +59,19 @@ Microeconomics factors:
 -   Individual characteristics, labor market discrimination, economic crises [@Nordman2016].
 -   Age, marital status, number of family members working in the informal sector, years of schooling, occupation, industry, and region [@amuedodorantes2004].
 
-## Definition of Informal Worker: ILO Definition
+## Data: CASEN 2017
+
+**Variable categories:** Human capital, sociodemographic, household, job.\
+\
+
+### Definition of Informal Worker: ILO Definition 
 
 -   **Unpaid family workers**: all.
 -   **Employees**: not paid social security contributions or health insurance.
 -   **Employers**: firm has five or fewer employees nationwide.
 -   **Self-employed workers**: their occupation is not classified as "Members of the executive and legislative bodies and managerial personnel of the public administration and companies",  "Scientific and intellectual professional" or "Technicians and mid-level professionals".
+
+Informal employment rate: 30.39% (All), 29.93% (Men), 30.98% (Women).
 
 ## Methodology: Adaptive LASSO Probit model
 <div style="font-size: 1.1em; text-align: center; margin: 15px 0;">
@@ -103,9 +110,9 @@ where,
       <td style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">
         Linear (#)
       </td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">6</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">4</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">2</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">6</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">4</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">2</td>
     </tr>
     
     <!-- Fila 2 -->
@@ -113,9 +120,9 @@ where,
       <td style="text-align: left; padding: 10px; border-bottom: 1px solid #B2544F;">
         Interactive (#)
       </td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #B2544F;">648</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #B2544F;">583</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #B2544F;">312</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #B2544F;">648</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #B2544F;">583</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #B2544F;">312</td>
     </tr>
     
     <!-- Fila 3 -->
@@ -123,9 +130,9 @@ where,
       <td style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">
         Total
       </td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">654</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">587</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">314</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">654</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">587</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">314</td>
     </tr>
     
     <!-- Fila 4 -->
@@ -133,9 +140,9 @@ where,
       <td style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">
         IMR selected
       </td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">Yes</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">Yes</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">Yes</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">Yes</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">Yes</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">Yes</td>
     </tr>
     
     <!-- Fila 5 -->
@@ -143,9 +150,9 @@ where,
       <td style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">
         RMSE
       </td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">0.117</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">0.109</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">0.129</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">0.117</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">0.109</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">0.129</td>
     </tr>
     
     <!-- Fila 5 -->
@@ -153,15 +160,15 @@ where,
       <td style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">
         Observations (#)
       </td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">89,287</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">51,453</td>
-      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">37,844</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">89,287</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">51,453</td>
+      <td style="text-align: center; padding: 10px; border-bottom: 1px solid #ddd;">37,844</td>
     </tr>
   </tbody>
 </table>
 
 <div style="font-size: 0.8em; margin-top: 15px; color: #666; line-height: 1.3;">
-<strong>Notes:</strong> The table reports the number of controls selected by Adaptive <span style="font-variant: small-caps;">lasso</span> probit model from **2,612** potential controls (from a second-order polynomial using 75 variables as a basis). Interactive variables correspond to nonlinear and interaction variables. <span style="font-variant: small-caps;">imr</span> refers to Inverse Mills Ratio term, included as a possible control for selection bias.
+<strong>Notes:</strong> The table reports the number of controls selected by Adaptive <span style="font-variant: small-caps;">lasso</span> probit model from **2,612** potential controls (from a second-order polynomial using 75 variables as a basis). Our dependent variable is the probability of working informally. Interactive variables correspond to nonlinear and interaction variables. <span style="font-variant: small-caps;">imr</span> refers to Inverse Mills Ratio term, included as a possible control for selection bias.
 </div>
 
 </div>
@@ -270,12 +277,20 @@ Wage gap between formal and informal workers
 -   Formal workers earn more than informal workers [@Chen2013; @Bargain2011EarningsAfrica; @Nordman2016; @ramonicolombia2021; @Williams2016]
 :::
 
-## Informal worker definition following ILO definition
+## Data: CASEN 2017
+
+**Variable categories:** Human capital, sociodemographic, household, job.\
+\
+
+### Informal worker definition following ILO definition (30.39%)
 
 -   **Unpaid family workers**: all.
 -   **Employees**: not paid social security contributions or health insurance.
 -   **Employers**: firm has five or fewer employees nationwide.
 -   **Self-employed workers**: their occupation is not classified as "Members of the executive and legislative bodies and managerial personnel of the public administration and companies", "Scientific and intellectual professional" or "Technicians and mid-level professionals".
+
+
+Hourly wage: US\$ 5.37 per hour (formal workers), US\$ 3.63 (informal workers) $\Rightarrow$ gross gap of 32.4%.
 
 ## The Sparse Matrix
 
@@ -576,7 +591,8 @@ Nonlinearity relevant in the wage structure of formal workers and informal worke
 
 Wage gap between formal and informal workers is mainly explained by nonlinearities.\
 
-\
+:::: {.columns}
+::: {.column width="60%"}
 
 Ten variables that most increase the wage gap:
 
@@ -593,6 +609,17 @@ Ten variables that most increase the wage gap:
 9. Real State $\times$ Dual Nationality (117.45%)
 10. O'Higgins Region $\times$ Annulled (106.89%)
 </div>
+:::
+
+::: {.column width="40%"}
+\
+\
+\
+\
+Reduce wage gap: Improvements in the efficiency of government spending distribution, focusing it where the wage gap is high.
+
+:::
+::::
 
 ## 
 
@@ -610,15 +637,36 @@ What factors influence the wage structure of informal and informal workers, and 
 </p>
 :::
 
-## Motivation and Literature Review
+## Motivation
 
+<div style="font-size: 0.9em; line-height: 1.3;">
+**All**:
 
+- Large informal penalty wage in the left tail of wage distribution [@bargain2014informal].
+- Wage premium for formal workers [@pratap2006labor].
+- Endowments key role for the observed wage gap [@kumar2021wage; @xue2014informal].
 
-## Data
+**Salaried workers**:
 
-Data used: [eps]{.smallcaps} 2004, [eps]{.smallcaps} 2006, [eps]{.smallcaps} 2009, and [eps]{.smallcaps} 2015.
+- No wage gains from formalizing [@ramoni2021analysis].
 
-17.78% of people were in informal employment in Chile between 2004 and 2015.
+**Self-employed workers**:
+
+- Full time workers benefit from formalizing [@ramoni2021analysis].
+
+**Employers**:
+
+- Full time men benefit from formalizing [@ramoni2021analysis].
+- High operating costs in the informal sector incentivize formalization [@meghir2015wages].
+
+</div>
+
+## Data: EPS
+
+Data used: [eps]{.smallcaps} 2004, [eps]{.smallcaps} 2006, [eps]{.smallcaps} 2009, and [eps]{.smallcaps} 2015.\
+
+17.78% of people were in informal employment in Chile between 2004 and 2015.\
+\
 
 Informal workers:
 
@@ -633,13 +681,14 @@ We use 38 variables (individual and job characteristics) to create a second-degr
 
 $$
 \begin{equation*}
-y_{it}=\boldsymbol{x}_{it}^{T}\boldsymbol{\beta}+\hat{\lambda}_{it}+d2_{t}\hat{\lambda}_{it}+\cdots+dT_{t}\hat{\lambda}_{it} + \mu_{i}+\varepsilon_{it}
+y_{it}=\boldsymbol{x}_{it}^{T}\boldsymbol{\beta}+IMR_{it}+d2_{t}IMR_{it}+\cdots+dT_{t}IMR_{it} + \mu_{i}+\varepsilon_{it}
 \end{equation*}
 $$ where,
 
--   $\hat{\lambda}_{it}$ corresponds to the Inverse Mills Ratio for the individual $i$ in time $t$.
 -   $\boldsymbol{x}_{it}$ is a characteristics vector for the individual $i$ in time $t$ from the Sparse Matrix.
 -   $d2_{t}$ to $dT_{t}$ are time dummy variables.
+-   $IMR_{it}$ corresponds to the Inverse Mills Ratio for the individual $i$ in time $t$.
+-   $\mu_{i}$ is the individual effect.
 
 
 ##  Number of controls selected and estimated by OLS Post-LASSO
@@ -678,15 +727,15 @@ $$ where,
         <strong>Wage Structure Formal Worker</strong><br>
         <span style="font-size: 0.85em;">($\hat{\beta}_{j}^{F} \neq 0 \; \wedge \hat{\beta}_{j}^{I} =0$)</span>
       </td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">5</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">5</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">36</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">37</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">5</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">5</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">36</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">37</td>
     </tr>
     
     <!-- Fila 2 -->
@@ -695,15 +744,15 @@ $$ where,
         <strong>Wage Structure Informal Worker</strong><br>
         <span style="font-size: 0.85em;">($\hat{\beta}_{j}^{F} = 0 \; \wedge \hat{\beta}_{j}^{I} \neq 0$)</span>
       </td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">64</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">65</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">0</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">64</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">65</td>
     </tr>
     
     <!-- Fila 3 -->
@@ -712,29 +761,29 @@ $$ where,
         <strong>Wage gap</strong><br>
         <span style="font-size: 0.85em;">($\hat{\beta}_{j}^{F} \neq 0 \; \wedge \hat{\beta}_{j}^{I} \neq0$)</span>
       </td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">2</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">2</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">55</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">2</td>
-      <td style="text-align: right; padding: 8px; border-bottom: 1px solid #ddd;">57</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">2</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">1</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">2</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">55</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">2</td>
+      <td style="text-align: center; padding: 8px; border-bottom: 1px solid #ddd;">57</td>
     </tr>
     
     <!-- Fila total -->
     <tr>
       <td style="text-align: left; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">Total controls</td>
-      <td style="text-align: right; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">7</td>
-      <td style="text-align: right; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">1</td>
-      <td style="text-align: right; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">8</td>
-      <td style="text-align: right; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">1</td>
-      <td style="text-align: right; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">1</td>
-      <td style="text-align: right; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">2</td>
-      <td style="text-align: right; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">155</td>
-      <td style="text-align: right; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">4</td>
-      <td style="text-align: right; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">159</td>
+      <td style="text-align: center; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">7</td>
+      <td style="text-align: center; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">1</td>
+      <td style="text-align: center; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">8</td>
+      <td style="text-align: center; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">1</td>
+      <td style="text-align: center; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">1</td>
+      <td style="text-align: center; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">2</td>
+      <td style="text-align: center; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">155</td>
+      <td style="text-align: center; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">4</td>
+      <td style="text-align: center; padding: 8px; border-top: 2px solid #B2544F; font-weight: bold;">159</td>
     </tr>
   </tbody>
 </table>
@@ -763,21 +812,21 @@ Employers
 
 Increase wage gap:
 
--  Both receive wage premium: Male $\times$ Head of household.
+-  Both receive wage premium: Male $\times$ Head of household (-106.53).
 
-- Both receive wage penalty:  High school $\times$ Araucania Region.
+- Both receive wage penalty: High school $\times$ Araucania Region (208.93).
     
-- Opposite effects: Separated $\times$ Santiago Metropolitan Region.
+- Opposite effects: Separated $\times$ Santiago Metropolitan Region (-118.7).
 
 Formal workers:
 
-- Increase hourly wage: Separated $\times$ Los Lagos Region.
-- Decrease hourly wage: Associate Degree $\times$ Valparaiso Region.
+- Increase hourly wage: Separated $\times$ Los Lagos Region (249.5).
+- Decrease hourly wage: Associate Degree $\times$ Valparaiso Region (-169.08).
 
 Informal workers:
 
-- Increase hourly wage: Tarapaca Region $\times$ Seasonal work.
-- Decrease hourly wage: Married $\times$ Araucania Region.
+- Increase hourly wage: Tarapaca Region $\times$ Seasonal work (235.13).
+- Decrease hourly wage: Married $\times$ Araucania Region (-364).
 
 </div>
 
@@ -789,9 +838,11 @@ Informal workers:
 
 ## Conclusions
 
-Nonlinear effects are relevant in the log wage generation process for employers, self-employed, and salaried workers.
-
-Public policies should take account the heterogeneity of labor market and consider individual and job characteristics that affect income generation.
+Nonlinear effects are relevant in the log wage generation process for employers, self-employed, and salaried workers.\
+\
+Reduce wage gap: Improvements in the efficiency of government spending distribution, focusing it where the wage gap is high.\
+\
+For example, programs to improve the quality of formal employment or make formalization attractive should be implemented on a regional basis.
 
 
 
