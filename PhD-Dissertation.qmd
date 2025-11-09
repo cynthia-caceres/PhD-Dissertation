@@ -3,7 +3,7 @@ title: "Three essays on the evaluation of informality in the Chilean labor marke
 subtitle: Dissertation
 author:
   - name: Cynthia Cáceres
-    affiliations: PhD. Student<br>Universidad de Talca
+    affiliations: Ph.D. Candidate<br>Universidad de Talca
   - name: Andrés Riquelme
     affiliations: Advisor<br>Universidad de Talca
 format: 
@@ -26,7 +26,7 @@ date: "November 10, 2025"
 
 Analyzing informality in the Chilean labor market is complex.
 
-We explore informality from a multidimensional perspective in three stages using hig-dimensional statistical tools:
+We explore informality from a multidimensional perspective using hig-dimensional statistical tools in three stages :
 
 1.  Decision to work informally.
 2.  Monetary gain or loss from working formally or informally.
@@ -35,11 +35,11 @@ We explore informality from a multidimensional perspective in three stages using
 ## 
 
 ::: {style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: 40vh; text-align: center; padding-top: 65px;"}
-<h2 style="color: #292A62; margin-bottom: 5px;">
+<h1 style="color: #292A62; margin-bottom: 5px;">
 
 Chapter 1: Understanding informal employment in Chile
 
-</h2>
+</h1>
 
 <p style="font-size: 0.9em; line-height: 1.6; color: #2C2C2F; max-width: 800px; margin: 0 auto;">
 
@@ -54,7 +54,7 @@ Informal employment rate in Chile: 27.5%.
 
 Microeconomics factors:
 
--   Race, education, financial acces, working in skilled occupations [@Gunter2017].
+-   Race, education, financial access, working in skilled occupations [@Gunter2017].
 -   Rural area, gender, marital status, age, years of schooling, occupation, economic activity [@Angel-Urdinola2012].
 -   Individual characteristics, labor market discrimination, economic crises [@Nordman2016].
 -   Age, marital status, number of family members working in the informal sector, years of schooling, occupation, industry, and region [@amuedodorantes2004].
@@ -64,9 +64,9 @@ Microeconomics factors:
 -   **Unpaid family workers**: all.
 -   **Employees**: not paid social security contributions or health insurance.
 -   **Employers**: firm has five or fewer employees nationwide.
--   **Own-account workers**: their occupation is not classified as "Members of the executive and legislative bodies and managerial personnel of the public administration and companies'', "Scientific and intellectual professional" or "Technicians and mid-level professionals".
+-   **Self-employed workers**: their occupation is not classified as "Members of the executive and legislative bodies and managerial personnel of the public administration and companies",  "Scientific and intellectual professional" or "Technicians and mid-level professionals".
 
-## Methodology: Probit model
+## Methodology: Adaptive LASSO Probit model
 <div style="font-size: 1.1em; text-align: center; margin: 15px 0;">
 $$
 \begin{equation*}
@@ -76,10 +76,10 @@ $$
 </div>
 where,
 
--   $y_{i}$ represents informal employment participation, equal to one if individual $i$ is an informal worker and zero otherwise.
--   $\boldsymbol{x}_{i}$ is an individual characteristic vector selected by [adaptive lasso]{.smallcaps}.
+-   $y_{i}$ represents informal employment participation, equal to one if individual $i$ is an informal worker and zero otherwise (formal worker).
+-   $\boldsymbol{x}_{i}$ is an individual characteristic vector (2,612 variables from a second-order polynomial).
 
-## Results: Number of controls selected by ADAPTIVE LASSO
+## Results: Number of controls selected by Adaptive LASSO
 
 <div style="font-size: 1em; margin: 20px 0; color: #292A62;">
 
@@ -89,7 +89,7 @@ where,
     <tr>
       <th style="text-align: center; padding: 10px; border-bottom: 2px solid #B2544F; width: 40%;">
         Variables selected<br>
-        <span style="font-size: 0.85em;">($\hat{\beta}_{ALASSO,j} \neq 0$)</span>
+        <span style="font-size: 0.85em;">($\hat{\beta}^{ALASSO}_{j} \neq 0$)</span>
       </th>
       <th style="text-align: center; padding: 10px; border-bottom: 2px solid #B2544F; width: 20%;">Full sample</th>
       <th style="text-align: center; padding: 10px; border-bottom: 2px solid #B2544F; width: 20%;">Men</th>
@@ -147,11 +147,21 @@ where,
       <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">0.109</td>
       <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">0.129</td>
     </tr>
+    
+    <!-- Fila 5 -->
+    <tr>
+      <td style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">
+        Observations (#)
+      </td>
+      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">89,287</td>
+      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">51,453</td>
+      <td style="text-align: right; padding: 10px; border-bottom: 1px solid #ddd;">37,844</td>
+    </tr>
   </tbody>
 </table>
 
-<div style="font-size: 0.8em; margin-top: 15px; color: #292A62; line-height: 1.3;">
-<strong>Notes:</strong> Interactive variables correspond to nonlinear and interaction variables. <span style="font-variant: small-caps;">imr</span> refers to Inverse Mills Ratio term, included as a possible control for selection bias.
+<div style="font-size: 0.8em; margin-top: 15px; color: #666; line-height: 1.3;">
+<strong>Notes:</strong> The table reports the number of controls selected by Adaptive <span style="font-variant: small-caps;">lasso</span> probit model from **2,612** potential controls (from a second-order polynomial using 75 variables as a basis). Interactive variables correspond to nonlinear and interaction variables. <span style="font-variant: small-caps;">imr</span> refers to Inverse Mills Ratio term, included as a possible control for selection bias.
 </div>
 
 </div>
@@ -183,15 +193,15 @@ Full Sample
 
 **Increase** probability of working informally:
 
--   Annulled $\times$ Illiteracy
--   Annulled $\times$ Other community service activities
--   Annulled $\times$ Manufacturing Industries
+-   Annulled $\times$ Illiteracy (0.741)
+-   Annulled $\times$ Other community service activities (0.741)
+-   Annulled $\times$ Manufacturing Industries (0.741)
 
 **Decrease** probability of working informally:
 
--   Annulled $\times$ Large enterprise
--   Annulled $\times$ Number of children under six years
--   Annulled $\times$ Teaching
+-   Annulled $\times$ Large enterprise (-0.261)
+-   Annulled $\times$ Number of children under six years (-0.260)
+-   Annulled $\times$ Teaching (-0.260)
 </div>
 
 :::
@@ -208,24 +218,30 @@ Decision to work informally depends not only on individual-level characteristics
 
 Cross-category interactions consistently **decrease** the probability of working informally:
 
--   Contract Type $\times$ Administrative Zone (All, men, and women).
--   Contract Type $\times$ Firm Size (All, men, and women).
--   Contract Type $\times$ Nationality (Men).
--   Firm Size $\times$ Administrative Zone (Women).
--   Contract Type $\times$ Sexual Orientation (Women).
+-   Contract Type $\times$ Administrative Zone (**All**, <strong style="color: #0E18AD;">Men</strong>, and <strong style="color: #A30D84;">Women</strong>).
+-   Contract Type $\times$ Firm Size (**All**, <strong style="color: #0E18AD;">Men</strong>, and <strong style="color: #A30D84;">Women</strong>).
+-   Contract Type $\times$ Nationality (<strong style="color: #0E18AD;">Men</strong>).
+-   Firm Size $\times$ Administrative Zone (<strong style="color: #A30D84;">Women</strong>).
+-   Contract Type $\times$ Sexual Orientation (<strong style="color: #A30D84;">Women</strong>).
 
-Marital Status $\times$ Contract Type **increases** the probability of working informally for women.\
+Marital Status $\times$ Contract Type **increases** the probability of working informally for <strong style="color: #A30D84;">women</strong>.\
+
+\
 
 Policy interventions should take account heterogeneity of subgroups for the distributive efficiency of public resources.
+
+## Manuscript Status in Empirical Economics
+
+![](figures/status_article_1.png)
 
 ## 
 
 ::: {style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: 40vh; text-align: center; padding-top: 65px;"}
-<h2 style="color: #292A62; margin-bottom: 5px;">
+<h1 style="color: #292A62; margin-bottom: 5px;">
 
 Chapter 2: Wage gap determinants between formal and informal workers and wage structure in Chile
 
-</h2>
+</h1>
 
 <p style="font-size: 0.9em; line-height: 1.6; color: #2C2C2F; max-width: 800px; margin: 0 auto;">
 
@@ -259,11 +275,46 @@ Wage gap between formal and informal workers
 -   **Unpaid family workers**: all.
 -   **Employees**: not paid social security contributions or health insurance.
 -   **Employers**: firm has five or fewer employees nationwide.
--   **Own-account workers**: their occupation is not classified as "Members of the executive and legislative bodies and managerial personnel of the public administration and companies'', "Scientific and intellectual professional" or "Technicians and mid-level professionals".
+-   **Self-employed workers**: their occupation is not classified as "Members of the executive and legislative bodies and managerial personnel of the public administration and companies", "Scientific and intellectual professional" or "Technicians and mid-level professionals".
 
-## Methodology: ADAPTIVE LASSO
+## The Sparse Matrix
 
-Following Adaptive Least Absolute Shrinkage and Selection Operator ([adaptive lasso]{.smallcaps}) methodology proposed by @Zou2006.
+::: {.equation-container}
+
+$$
+\underset{(n_F+n_I, K)}{\mathbf{X}}  =  
+\begin{array}{c} 
+\hspace{-1.6cm}
+\begin{array}{c c c c c c c c c c } 
+\color{red}{\beta^{F}_{1}} & \; \beta^{F}_{2} & \; \cdots & \; \beta^{F}_{k}  & \qquad \color{red}{\beta^{I}_{1}} & \; \beta^{I}_{2} & \; \cdots & \; \beta^{I}_{k} &  \phantom{0}
+\end{array}\\
+\left(
+\begin{array}{cccc|cccc|c}
+  \color{red}{x_{11}^{\text{F}} }   & x_{12}^{\text{F}}    & \cdots & x_{1k}^{\text{F}}    & \color{red}{0}      & 0      &\cdots & 0  & IMR^{F}_{1}  \\ 	
+  \color{red}{x_{21}^{\text{F}}}    & x_{22}^{\text{F}}    & \cdots & x_{2k}^{\text{F}}    & \color{red}{0}      & 0      &\cdots & 0  & IMR^{F}_{2}    \\
+  \color{red}{\vdots}               & \vdots               & \ddots & \vdots               & \color{red}{\vdots} & \vdots &\ddots & \vdots & \vdots \\	
+  \color{red}{x_{n_{F},1}^{\text{F}}} & x_{n_F,2}^{\text{F}} & \cdots & x_{n_F,k}^{\text{F}} & \color{red}{0}      & 0      &\cdots & 0     & IMR^{F}_{n_{F}} \\ 
+  \hline
+  \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{11}^{\text{I}}}   & x_{12}^{\text{I}}   & \cdots & x_{1k}^{\text{I}}  & IMR^{I}_{1} \\
+  \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{21}^{\text{I}}}   & x_{22}^{\text{I}}   & \cdots & x_{2k}^{\text{I}}  & IMR^{I}_{2} \\ 	
+\color{red}{\vdots} & \vdots& \ddots & \vdots & \color{red}{\vdots}              & \vdots              & \ddots & \vdots       & \vdots      \\   	
+  \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{n_I,1}^{\text{I}}} & x_{n_I,2}^{\text{I}}& \cdots & x_{n_I,k}^{\text{I}} & IMR^{I}_{n_{I}} \\
+\end{array}\right)\end{array}
+$$
+
+:::
+
+where,
+
+- $n_{F}$ corresponf to the number of formal workers.
+- $n_{I}$ correspond to the number of informal workers.
+- $K = 2k + 1$, where $k$ are potential controls from a second-order polynomial.
+
+
+
+## Methodology: Adaptive LASSO
+
+Following Adaptive Least Absolute Shrinkage and Selection Operator (Adaptive [lasso]{.smallcaps}) methodology proposed by @Zou2006.
 
 $$
 \begin{equation*}
@@ -272,7 +323,7 @@ $$
 \end{equation*}
 $$ where $\lambda$ is a non--negative regularization parameter selected using cross--validation, $\boldsymbol{\widehat{w}}=\{ \widehat{w}_{1},\dots,\hat{w}_{K} \}$ is a vector of weights defined as $\boldsymbol{\hat{w}}= \frac{1}{|\boldsymbol{\hat{\beta}_{RIDGE}}|^{\gamma}}$, with $\gamma = 1$.
 
-Our relevant subset of predictors $A^{*}_{n}$ corresponds to the non--zero parameters for formal and/or informal workers: $A^{*}_{n}=\{j:\hat{\beta}^{F}_{\mathsf{Alasso}, j}\neq 0 \; \vee \; \hat{\beta}^{I}_{\mathsf{ALASSO}, j}\neq 0 \}$.
+Our relevant subset of predictors $A^{*}_{n}$ corresponds to the non--zero parameters for formal and/or informal workers: $A^{*}_{n}=\{j:\hat{\beta}^{Formal}_{j}\neq 0 \; \vee \; \hat{\beta}^{Informal}_{j}\neq 0 \}$.
 
 ## The Sparse Matrix
 
@@ -374,9 +425,9 @@ For a variable $j$
   <thead>
     <tr>
       <th style="text-align: left; padding: 10px; border-bottom: 2px solid #B2544F; width: 55%;">Explain wage of</th>
-      <th style="padding: 10px; border-bottom: 2px solid #B2544F; width: 15%;">Linear</th>
-      <th style="padding: 10px; border-bottom: 2px solid #B2544F; width: 15%;">Nonlinear</th>
-      <th style="padding: 10px; border-bottom: 2px solid #B2544F; width: 15%;">Total</th>
+      <th style="padding: 10px; text-align: center; border-bottom: 2px solid #B2544F; width: 15%;">Linear</th>
+      <th style="padding: 10px; text-align: center; border-bottom: 2px solid #B2544F; width: 15%;">Nonlinear</th>
+      <th style="padding: 10px; text-align: center; border-bottom: 2px solid #B2544F; width: 15%;">Total</th>
     </tr>
   </thead>
   
@@ -387,9 +438,9 @@ For a variable $j$
         <strong>Formal workers</strong><br>
         <span style="font-size: 0.85em;">($\hat{\beta}_{j}^{F} \neq 0  \quad \wedge \quad \hat{\beta}_{j}^{I} = 0$)</span>
       </td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd; color: #292A62;">3</td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd; color: #292A62;">254</td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd; color: #292A62;">257</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd; color: #292A62;">3</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd; color: #292A62;">254</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd; color: #292A62;">257</td>
     </tr>
     
     <!-- Fila 2 -->
@@ -398,9 +449,9 @@ For a variable $j$
         <strong>Informal workers</strong><br>
         <span style="font-size: 0.85em;">($\hat{\beta}_{j}^{F} = 0  \quad \wedge \quad \hat{\beta}_{j}^{I} \neq 0$)</span>
       </td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd;">2</td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd;">383</td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd;">385</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd;">2</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd;">383</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd;">385</td>
     </tr>
     
     <!-- Fila 3 -->
@@ -409,9 +460,9 @@ For a variable $j$
         <strong>Formal and informal workers</strong><br>
         <span style="font-size: 0.85em;">($\hat{\beta}_{j}^{F} \neq 0  \quad \wedge \quad \hat{\beta}_{j}^{I} \neq 0$)</span>
       </td>
-      <td style="padding: 10px; border-bottom: 1px solid #B2544F;">2</td>
-      <td style="padding: 10px; border-bottom: 1px solid #B2544F;">183</td>
-      <td style="padding: 10px; border-bottom: 1px solid #B2544F;">185</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #B2544F;">2</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #B2544F;">183</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #B2544F;">185</td>
     </tr>
     
     <!-- Fila 4 -->
@@ -420,9 +471,9 @@ For a variable $j$
         <strong>Total Controls</strong><br>
         <span style="font-size: 0.85em;">($\hat{\beta}_{j}^{F} = 0  \quad \vee \quad \hat{\beta}_{j}^{I} \neq 0$)</span>
       </td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd;">7</td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd;">820</td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd;">827</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd;">7</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd;">820</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd;">827</td>
     </tr>
     
     <!-- Fila 5 - IMR -->
@@ -430,9 +481,9 @@ For a variable $j$
       <td style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">
         <strong><span style="font-variant: small-caps;">imr</span></strong>
       </td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd;">1</td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd;"></td>
-      <td style="padding: 10px; border-bottom: 1px solid #ddd;">1</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd;">1</td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd;"></td>
+      <td style="padding: 10px; text-align: center; border-bottom: 1px solid #ddd;">1</td>
     </tr>
     
     <!-- Fila 6 - Total Final -->
@@ -440,15 +491,15 @@ For a variable $j$
       <td style="text-align: left; padding: 10px; border-top: 2px solid #B2544F; font-weight: bold;">
         Total Controls selected
       </td>
-      <td style="padding: 10px; border-top: 2px solid #B2544F; font-weight: bold;">8</td>
-      <td style="padding: 10px; border-top: 2px solid #B2544F; font-weight: bold;">820</td>
-      <td style="padding: 10px; border-top: 2px solid #B2544F; font-weight: bold;">828</td>
+      <td style="padding: 10px; text-align: center; border-top: 2px solid #B2544F; font-weight: bold;">8</td>
+      <td style="padding: 10px; text-align: center; border-top: 2px solid #B2544F; font-weight: bold;">820</td>
+      <td style="padding: 10px; text-align: center; border-top: 2px solid #B2544F; font-weight: bold;">828</td>
     </tr>
   </tbody>
 </table>
 
 <div style="font-size: 0.7em; margin-top: 15px; color: #666; line-height: 1.3;">
-<strong>Notes:</strong> The table reports the number of controls selected by <span style="font-variant: small-caps;">adaptive lasso</span> from 2,612 potential controls (including quadratic terms and interactions). $\hat{\beta}_{j}^{F}$ and $\hat{\beta}_{j}^{I}$ represent the estimated coefficients for variable $x_{j}$ for formal and informal workers, respectively. A variable $x_{j}$ explain only the wage of formal workers when $\hat{\beta}_{j}^{F} \neq 0 \; \wedge \; \hat{\beta}_{j}^{I}=0$, and vice versa. A variable $x_{j}$ explain the wage gap when $\hat{\beta}_{j}^{F} \neq 0 \; \wedge \; \hat{\beta}_{j}^{I} \neq 0$. Nonlinear variables refers to quadratic and interaction terms.
+<strong>Notes:</strong> The table reports the number of controls selected by <span style="font-variant: small-caps;">adaptive lasso</span> from **2,612** potential controls (including quadratic terms and interactions). $\hat{\beta}_{j}^{F}$ and $\hat{\beta}_{j}^{I}$ represent the estimated coefficients for variable $x_{j}$ for formal and informal workers, respectively. A variable $x_{j}$ explain only the wage of formal workers when $\hat{\beta}_{j}^{F} \neq 0 \; \wedge \; \hat{\beta}_{j}^{I}=0$, and vice versa. A variable $x_{j}$ explain the wage gap when $\hat{\beta}_{j}^{F} \neq 0 \; \wedge \; \hat{\beta}_{j}^{I} \neq 0$. Nonlinear variables refers to quadratic and interaction terms.
 </div>
 
 </div>
@@ -466,23 +517,27 @@ For a variable $j$
 ::: {.column width="35%"}
 
 <div style="font-size: 0.75em; line-height: 1.3;">
-Increase wage gap:
+**Increase wage gap**:
 
--  Both receive wage premium: Dual nationlity $\times$ Illiteracy.
+-  Both receive wage premium:\
+  Dual nationality $\times$ Illiteracy (119.33%).
 
-- Both receive wage penalty: Foreigner $\times$ Bisexual.
+- Both receive wage penalty:\
+  Foreigner $\times$ Bisexual (284.53%).
     
-- Opposite effects: Atacama Region $\times$ Dual nationality.
+- Opposite effects:\
+  Atacama Region $\times$ Dual nationality (889.98%).
 
-Formal workers:
+**Formal workers**:
 
-- Increase hourly wage: Extraterritorial organizations $\times$ Married.
-- Decrease hourly wage: Divorced $\times$ Bisexual.
+- Increase hourly wage: Extraterritorial organizations $\times$ Married (346%).
+- Decrease hourly wage:\
+  Divorced $\times$ Bisexual (-91%).
 
-Informal workers:
+**Informal workers**:
 
-- Increase hourly wage: Transportation sector $\times$ Cohab. with civil union.
-- Decrease hourly wage: Medium-sized enterprise $\times$ Other sexual orientation
+- Increase hourly wage: Transportation sector $\times$ Cohab. with civil union (745%).
+- Decrease hourly wage: Medium-sized enterprise $\times$ Other sexual orientation (-97%).
 
  
 <a href="interactive_graphs/ch2_plotly_heatmap_all.html" target="_blank" class="btn btn-primary">Plot</a>    
@@ -495,22 +550,37 @@ Informal workers:
 
 
 
-## Conlcusions
+## Conclusions
 
-Nonlinearity relevant in the wage structure of formal workers amd informal workers. 
+Nonlinearity relevant in the wage structure of formal workers and informal workers.\
 
-Wage gap between formal and informal workers is mainly explained by nonlinearities.
+Wage gap between formal and informal workers is mainly explained by nonlinearities.\
+\
 
-Public policies 
+Ten variables that most increase the wage gap:
+
+<div style="font-size: 0.75em; line-height: 1.3;">
+
+1. Atacama Region $\times$ Dual Nationality (889.98%)
+2. Maule Region $\times$ Annulled (428.77%)
+3. Financial Intermediation $\times$ Rural Area (334.98%)
+4. Antofagasta Region $\times$ Cohab. in civil union (324.04%)
+5. Foreigners $\times$ Bisexual (284.53%)
+6. Cohab. in civil union $\times$ Medium size enterprise (262.81%)
+7. Financial Intermediation $\times$ Foreigners (202.81%)
+8. Illiterate $\times$ Dual Nationality (119.33%)
+9. Real State $\times$ Dual Nationality (117.45%)
+10. O'Higgins Region $\times$ Annulled (106.89%)
+</div>
 
 ## 
 
 ::: {style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: 40vh; text-align: center; padding-top: 65px;"}
-<h2 style="color: #292A62; margin-bottom: 5px;">
+<h1 style="color: #292A62; margin-bottom: 5px;">
 
 Chapter 3: Wage structure and wage gap determinants between formal and informal workers by status in employment,<br>Chile 2004-2015
 
-</h2>
+</h1>
 
 <p style="font-size: 0.9em; line-height: 1.6; color: #2C2C2F; max-width: 800px; margin: 0 auto;">
 
@@ -518,6 +588,10 @@ What factors influence the wage structure of informal and informal workers, and 
 
 </p>
 :::
+
+## Motivation and Literature Review
+
+
 
 ## Data
 
