@@ -555,6 +555,7 @@ For a variable $j$
 Nonlinearity relevant in the wage structure of formal workers and informal workers.\
 
 Wage gap between formal and informal workers is mainly explained by nonlinearities.\
+
 \
 
 Ten variables that most increase the wage gap:
