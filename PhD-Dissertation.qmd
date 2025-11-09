@@ -299,7 +299,14 @@ $$
   \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{21}^{\text{I}}}   & x_{22}^{\text{I}}   & \cdots & x_{2k}^{\text{I}}  & IMR^{I}_{2} \\ 	
 \color{red}{\vdots} & \vdots& \ddots & \vdots & \color{red}{\vdots}              & \vdots              & \ddots & \vdots       & \vdots      \\   	
   \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{n_I,1}^{\text{I}}} & x_{n_I,2}^{\text{I}}& \cdots & x_{n_I,k}^{\text{I}} & IMR^{I}_{n_{I}} \\
-\end{array}\right)\end{array}
+\end{array}
+\right)\\
+\begin{array}{cccc}
+\underbrace{\hspace{4cm}}_{\text{Formal workers}} & &
+\underbrace{\hspace{4cm}}_{\text{Informal workers}} &
+\underbrace{\hspace{1.2cm}}_{\text{IMR}}
+\end{array}
+\end{array}
 $$
 
 :::
@@ -330,20 +337,31 @@ Our relevant subset of predictors $A^{*}_{n}$ corresponds to the non--zero param
 ::: {.equation-container}
 
 $$
-\underset{(n_F+n_I, K)}{\mathbf{X}} = 
+\underset{(n_F+n_I, K)}{\mathbf{X}}  =  
+\begin{array}{c} 
+\hspace{-1.6cm}
+\begin{array}{c c c c c c c c c c } 
+\color{red}{\beta^{F}_{1}} & \; \beta^{F}_{2} & \; \cdots & \; \beta^{F}_{k}  & \qquad \color{red}{\beta^{I}_{1}} & \; \beta^{I}_{2} & \; \cdots & \; \beta^{I}_{k} &  \phantom{0}
+\end{array}\\
 \left(
 \begin{array}{cccc|cccc|c}
-  x_{11}^{\text{F}}    & x_{12}^{\text{F}}    & \cdots & x_{1k}^{\text{F}}    & 0      & 0      &\cdots & 0  & IMR^{F}_{1}  \\ 	
-  x_{21}^{\text{F}}    & x_{22}^{\text{F}}    & \cdots & x_{2k}^{\text{F}}    & 0      & 0      &\cdots & 0  & IMR^{F}_{2}    \\
-  \vdots               & \vdots               & \ddots & \vdots               & \vdots & \vdots &\ddots & \vdots & \vdots \\	
-  x_{n_{F},1}^{\text{F}} & x_{n_F,2}^{\text{F}} & \cdots & x_{n_F,k}^{\text{F}} & 0      & 0      &\cdots & 0     & IMR^{F}_{n_{F}} \\ 
+  \color{red}{x_{11}^{\text{F}} }   & x_{12}^{\text{F}}    & \cdots & x_{1k}^{\text{F}}    & \color{red}{0}      & 0      &\cdots & 0  & IMR^{F}_{1}  \\ 	
+  \color{red}{x_{21}^{\text{F}}}    & x_{22}^{\text{F}}    & \cdots & x_{2k}^{\text{F}}    & \color{red}{0}      & 0      &\cdots & 0  & IMR^{F}_{2}    \\
+  \color{red}{\vdots}               & \vdots               & \ddots & \vdots               & \color{red}{\vdots} & \vdots &\ddots & \vdots & \vdots \\	
+  \color{red}{x_{n_{F},1}^{\text{F}}} & x_{n_F,2}^{\text{F}} & \cdots & x_{n_F,k}^{\text{F}} & \color{red}{0}      & 0      &\cdots & 0     & IMR^{F}_{n_{F}} \\ 
   \hline
-  0      & 0     & \cdots & 0      & x_{11}^{\text{I}}   & x_{12}^{\text{I}}   & \cdots & x_{1k}^{\text{I}}  & IMR^{I}_{1} \\
-  0      & 0     & \cdots & 0      & x_{21}^{\text{I}}   & x_{22}^{\text{I}}   & \cdots & x_{2k}^{\text{I}}  & IMR^{I}_{2} \\ 	
-  \vdots & \vdots& \ddots & \vdots & \vdots              & \vdots              & \ddots & \vdots       & \vdots      \\   	
-  0      & 0     & \cdots & 0      & x_{n_I,1}^{\text{I}}& x_{n_I,2}^{\text{I}}& \cdots & x_{n_I,k}^{\text{I}} & IMR^{I}_{n_{I}} \\
+  \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{11}^{\text{I}}}   & x_{12}^{\text{I}}   & \cdots & x_{1k}^{\text{I}}  & IMR^{I}_{1} \\
+  \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{21}^{\text{I}}}   & x_{22}^{\text{I}}   & \cdots & x_{2k}^{\text{I}}  & IMR^{I}_{2} \\ 	
+\color{red}{\vdots} & \vdots& \ddots & \vdots & \color{red}{\vdots}              & \vdots              & \ddots & \vdots       & \vdots      \\   	
+  \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{n_I,1}^{\text{I}}} & x_{n_I,2}^{\text{I}}& \cdots & x_{n_I,k}^{\text{I}} & IMR^{I}_{n_{I}} \\
 \end{array}
-\right)
+\right) \\
+\begin{array}{cccc}
+\underbrace{\hspace{4cm}}_{\text{Formal workers}} & &
+\underbrace{\hspace{4cm}}_{\text{Informal workers}} &
+\underbrace{\hspace{1.2cm}}_{\text{IMR}}
+\end{array}
+\end{array}
 $$
 
 :::
