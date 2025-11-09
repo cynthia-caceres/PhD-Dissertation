@@ -844,6 +844,22 @@ Reduce wage gap: Improvements in the efficiency of government spending distribut
 \
 For example, programs to improve the quality of formal employment or make formalization attractive should be implemented on a regional basis.
 
+## 
+
+::: {style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: 40vh; text-align: center; padding-top: 65px;"}
+<h1 style="color: #292A62; margin-bottom: 5px;">
+
+Thanks!
+
+</h1>
+
+<p style="font-size: 0.9em; line-height: 1.6; color: #2C2C2F; max-width: 800px; margin: 0 auto; margin-bottom: 20px;">
+
+Acknowledgement to ANID National Doctorate Scholarship N°21221990 and\
+Doctoral Studies Scholarship from the University of Talca.
+
+</p>
+:::
 
 
 ## References
