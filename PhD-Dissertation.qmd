@@ -16,7 +16,8 @@ format:
     self-contained-math: true
     self_contained: true
     theme: style.scss
-    header-logo: logos/logo_utalca.png      
+    header-logo: logos/logo_utalca.png   
+    touch: true   
 bibliography: [bibliography.bib, informalidad.bib, references1.bib, references.bib]
 embed-resources: true
 date: "November 10, 2025"
