@@ -282,6 +282,7 @@ Wage gap between formal and informal workers
 ::: {.equation-container}
 
 $$
+{\small
 \underset{(n_F+n_I, K)}{\mathbf{X}}  =  
 \begin{array}{c} 
 \hspace{-1.6cm}
@@ -307,13 +308,14 @@ $$
 \underbrace{\hspace{1.2cm}}_{\text{IMR}}
 \end{array}
 \end{array}
+}
 $$
 
 :::
 
 where,
 
-- $n_{F}$ corresponf to the number of formal workers.
+- $n_{F}$ correspond to the number of formal workers.
 - $n_{I}$ correspond to the number of informal workers.
 - $K = 2k + 1$, where $k$ are potential controls from a second-order polynomial.
 
