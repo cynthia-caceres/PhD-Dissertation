@@ -17,7 +17,8 @@ format:
     self_contained: true
     theme: style.scss
     header-logo: logos/logo_utalca.png   
-    touch: true   
+    touch: true 
+    embed-resources: true  
 bibliography: [bibliography.bib, informalidad.bib, references1.bib, references.bib]
 embed-resources: true
 date: "November 10, 2025"
@@ -62,7 +63,7 @@ Microeconomics factors:
 
 ## Data: CASEN 2017
 
-**Variable categories:** Human capital, sociodemographic, household, job.\
+**Variable categories:** Human capital, sociodemographic, household, job (75 variables).\
 \
 
 ### Definition of Informal Worker: ILO Definition 
@@ -74,7 +75,7 @@ Microeconomics factors:
 
 Informal employment rate: 30.39% (All), 29.93% (Men), 30.98% (Women).
 
-## Methodology: Adaptive LASSO Probit model
+## Methodology: Probit model
 <div style="font-size: 1.1em; text-align: center; margin: 15px 0;">
 $$
 \begin{equation*}
@@ -85,7 +86,7 @@ $$
 where,
 
 -   $y_{i}$ represents informal employment participation, equal to one if individual $i$ is an informal worker and zero otherwise (formal worker).
--   $\boldsymbol{x}_{i}$ is an individual characteristic vector (2,612 variables from a second-order polynomial).
+-   $\boldsymbol{x}_{i}$ is an individual characteristic vector selected by Adaptive [lasso]{.smallcaps} in the second-stage.
 
 ## Results: Number of controls selected by Adaptive LASSO
 
@@ -686,6 +687,7 @@ y_{it}=\boldsymbol{x}_{it}^{T}\boldsymbol{\beta}+IMR_{it}+d2_{t}IMR_{it}+\cdots+
 \end{equation*}
 $$ where,
 
+-   $y_{it}$ is the log hourly wage.
 -   $\boldsymbol{x}_{it}$ is a characteristics vector for the individual $i$ in time $t$ from the Sparse Matrix.
 -   $d2_{t}$ to $dT_{t}$ are time dummy variables.
 -   $IMR_{it}$ corresponds to the Inverse Mills Ratio for the individual $i$ in time $t$.
@@ -709,14 +711,14 @@ $$ where,
     </tr>
     <tr>
       <th style="border: none;"></th>
-      <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Linear</th>
       <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Nonlinear</th>
+      <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Linear</th>
       <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Total</th>
-      <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Linear</th>
       <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Nonlinear</th>
+      <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Linear</th>
       <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Total</th>
-      <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Linear</th>
       <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Nonlinear</th>
+      <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Linear</th>
       <th style="text-align: center; border-bottom: 1px solid #B2544F; padding: 6px;">Total</th>
     </tr>
   </thead>
@@ -871,3 +873,15 @@ Doctoral Studies Scholarship from the University of Talca.
 :::
 
 </div>
+
+## Ch1: Men
+{{< embedpdf "figures/ilo_men.pdf" width="800px" height="600px" >}}
+
+## Ch1: Women
+{{< embedpdf "figures/ilo_women.pdf" width="800px" height="600px" >}}
+
+## Ch3: Employees
+{{< embedpdf "figures/asalariados.pdf" width="800px" height="600px" >}}
+
+## Ch3: Self-employed
+{{< embedpdf "figures/cta_propia.pdf" width="800px" height="600px" >}}
