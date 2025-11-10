@@ -292,7 +292,7 @@ Wage gap between formal and informal workers
 -   **Self-employed workers**: their occupation is not classified as "Members of the executive and legislative bodies and managerial personnel of the public administration and companies", "Scientific and intellectual professional" or "Technicians and mid-level professionals".
 
 
-Hourly wage: US\$ 5.37 per hour (formal workers), US\$ 3.63 (informal workers) $\Rightarrow$ gross gap of 32.4%.
+Hourly wage: US\$ 5.37 (formal workers), US\$ 3.63 (informal workers) $\Rightarrow$ gross gap of 32.4%.
 
 ## The Sparse Matrix
 
@@ -622,6 +622,8 @@ Reduce wage gap: Improvements in the efficiency of government spending distribut
 
 :::
 ::::
+
+
 
 ## 
 
