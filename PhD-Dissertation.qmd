@@ -202,15 +202,15 @@ Full Sample
 
 **Increase** probability of working informally:
 
--   Annulled $\times$ Illiteracy (0.741)
--   Annulled $\times$ Other community service activities (0.741)
--   Annulled $\times$ Manufacturing Industries (0.741)
+-   Annulled $\times$ Illiteracy (**0.741**)
+-   Annulled $\times$ Other community service activities (**0.741**)
+-   Annulled $\times$ Manufacturing Industries (**0.741**)
 
 **Decrease** probability of working informally:
 
--   Annulled $\times$ Large enterprise (-0.261)
--   Annulled $\times$ Number of children under six years (-0.260)
--   Annulled $\times$ Teaching (-0.260)
+-   Annulled $\times$ Large enterprise (**-0.261**)
+-   Annulled $\times$ Number of children under six years (**-0.260**)
+-   Annulled $\times$ Teaching (**-0.260**)
 </div>
 
 :::
@@ -351,39 +351,8 @@ $$ where $\lambda$ is a non--negative regularization parameter selected using cr
 
 Our relevant subset of predictors $A^{*}_{n}$ corresponds to the non--zero parameters for formal and/or informal workers: $A^{*}_{n}=\{j:\hat{\beta}^{Formal}_{j}\neq 0 \; \vee \; \hat{\beta}^{Informal}_{j}\neq 0 \}$.
 
-## The Sparse Matrix
 
-::: {.equation-container}
 
-$$
-\underset{(n_F+n_I, K)}{\mathbf{X}}  =  
-\begin{array}{c} 
-\hspace{-1.6cm}
-\begin{array}{c c c c c c c c c c } 
-\color{red}{\beta^{F}_{1}} & \; \beta^{F}_{2} & \; \cdots & \; \beta^{F}_{k}  & \qquad \color{red}{\beta^{I}_{1}} & \; \beta^{I}_{2} & \; \cdots & \; \beta^{I}_{k} &  \phantom{0}
-\end{array}\\
-\left(
-\begin{array}{cccc|cccc|c}
-  \color{red}{x_{11}^{\text{F}} }   & x_{12}^{\text{F}}    & \cdots & x_{1k}^{\text{F}}    & \color{red}{0}      & 0      &\cdots & 0  & IMR^{F}_{1}  \\ 	
-  \color{red}{x_{21}^{\text{F}}}    & x_{22}^{\text{F}}    & \cdots & x_{2k}^{\text{F}}    & \color{red}{0}      & 0      &\cdots & 0  & IMR^{F}_{2}    \\
-  \color{red}{\vdots}               & \vdots               & \ddots & \vdots               & \color{red}{\vdots} & \vdots &\ddots & \vdots & \vdots \\	
-  \color{red}{x_{n_{F},1}^{\text{F}}} & x_{n_F,2}^{\text{F}} & \cdots & x_{n_F,k}^{\text{F}} & \color{red}{0}      & 0      &\cdots & 0     & IMR^{F}_{n_{F}} \\ 
-  \hline
-  \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{11}^{\text{I}}}   & x_{12}^{\text{I}}   & \cdots & x_{1k}^{\text{I}}  & IMR^{I}_{1} \\
-  \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{21}^{\text{I}}}   & x_{22}^{\text{I}}   & \cdots & x_{2k}^{\text{I}}  & IMR^{I}_{2} \\ 	
-\color{red}{\vdots} & \vdots& \ddots & \vdots & \color{red}{\vdots}              & \vdots              & \ddots & \vdots       & \vdots      \\   	
-  \color{red}{0}      & 0     & \cdots & 0      & \color{red}{x_{n_I,1}^{\text{I}}} & x_{n_I,2}^{\text{I}}& \cdots & x_{n_I,k}^{\text{I}} & IMR^{I}_{n_{I}} \\
-\end{array}
-\right) \\
-\begin{array}{cccc}
-\underbrace{\hspace{4cm}}_{\text{Formal workers}} & &
-\underbrace{\hspace{4cm}}_{\text{Informal workers}} &
-\underbrace{\hspace{1.2cm}}_{\text{IMR}}
-\end{array}
-\end{array}
-$$
-
-:::
 
 ## The Sparse Matrix: Interpreting the Results
 
@@ -557,24 +526,24 @@ For a variable $j$
 **Increase wage gap**:
 
 -  Both receive wage premium:\
-  Dual nationality $\times$ Illiteracy (119.33%).
+  Dual nationality $\times$ Illiteracy (**119.33%**).
 
 - Both receive wage penalty:\
-  Foreigner $\times$ Bisexual (284.53%).
+  Foreigner $\times$ Bisexual (**284.53%**).
     
 - Opposite effects:\
-  Atacama Region $\times$ Dual nationality (889.98%).
+  Atacama Region $\times$ Dual nationality (**889.98%**).
 
 **Formal workers**:
 
 - Increase hourly wage: Extraterritorial organizations $\times$ Married (346%).
 - Decrease hourly wage:\
-  Divorced $\times$ Bisexual (-91%).
+  Divorced $\times$ Bisexual (**-91%**).
 
 **Informal workers**:
 
-- Increase hourly wage: Transportation sector $\times$ Cohab. with civil union (745%).
-- Decrease hourly wage: Medium-sized enterprise $\times$ Other sexual orientation (-97%).
+- Increase hourly wage: Transportation sector $\times$ Cohab. with civil union (**745%**).
+- Decrease hourly wage: Medium-sized enterprise $\times$ Other sexual orientation (**-97%**).
 
  
 <a href="interactive_graphs/ch2_plotly_heatmap_all.html" target="_blank" class="btn btn-primary">Plot</a>    
@@ -589,40 +558,97 @@ For a variable $j$
 
 ## Conclusions
 
-Nonlinearity relevant in the wage structure of formal workers and informal workers.\
+Nonlinearities largely explain the wage structure of formal workers and informal workers, and the wage gap between these groups.
 
-Wage gap between formal and informal workers is mainly explained by nonlinearities.\
+Effective strategies to enhance worker formalization and mitigate wage differentials between these groups should be focused according to the incidence group.\
 
-:::: {.columns}
-::: {.column width="60%"}
+Reduce wage gap: Improvements in the efficiency of government spending distribution, focusing it where the wage gap is high.\
 
-Ten variables that most increase the wage gap:
+Five variables that most increase the wage gap:
 
-<div style="font-size: 0.75em; line-height: 1.3;">
+<table class="presentation-table">
+  <thead>
+    <tr>
+      <th rowspan="2">Variable interaction</th>
+      <th>Formal Coefficient</th>
+      <th>Informal Coefficient</th>
+      <th>Difference</th>
+      <th rowspan="2">Δ % log hourly wage</th>
+    </tr>
+    <tr>
+      <th>( <i>β<sub>j</sub></i><sup>F</sup> ≠ 0 )</th>
+      <th>( <i>β<sub>j</sub></i><sup>I</sup> ≠ 0 )</th>
+      <th>( <i>β<sub>j</sub></i><sup>F</sup> − <i>β<sub>j</sub></i><sup>I</sup>)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Atacama Region × Dual nationality</td>
+      <td>1.4167</td>
+      <td>-0.8758</td>
+      <td>2.2925</td>
+      <td>889.98</td>
+    </tr>
+    <tr>
+      <td>Maule Region × Annulled</td>
+      <td>0.2878</td>
+      <td>-1.3776</td>
+      <td>1.6654</td>
+      <td>428.77</td>
+    </tr>
+    <tr>
+      <td>Financial intermediation × Rural area</td>
+      <td>0.3304</td>
+      <td>-1.1397</td>
+      <td>1.4701</td>
+      <td>334.98</td>
+    </tr>
+    <tr>
+      <td>Antofagasta Region × Cohabiting, in a civil union</td>
+      <td>0.3563</td>
+      <td>-1.0884</td>
+      <td>1.4447</td>
+      <td>324.04</td>
+    </tr>
+    <tr>
+      <td>Foreigner × Bisexual</td>
+      <td>-0.2537</td>
+      <td>-1.6005</td>
+      <td>1.3468</td>
+      <td>284.53</td>
+    </tr>
+  </tbody>
+</table>
 
-1. Atacama Region $\times$ Dual Nationality (889.98%)
-2. Maule Region $\times$ Annulled (428.77%)
-3. Financial Intermediation $\times$ Rural Area (334.98%)
-4. Antofagasta Region $\times$ Cohab. in civil union (324.04%)
-5. Foreigners $\times$ Bisexual (284.53%)
-6. Cohab. in civil union $\times$ Medium size enterprise (262.81%)
-7. Financial Intermediation $\times$ Foreigners (202.81%)
-8. Illiterate $\times$ Dual Nationality (119.33%)
-9. Real State $\times$ Dual Nationality (117.45%)
-10. O'Higgins Region $\times$ Annulled (106.89%)
-</div>
-:::
+<style>
 
-::: {.column width="40%"}
-\
-\
-\
-\
-Reduce wage gap: Improvements in the efficiency of government spending distribution, focusing it where the wage gap is high.
+.presentation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin: 1em 0;
+}
 
-:::
-::::
+.presentation-table th,
+.presentation-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
 
+.presentation-table th {
+  background-color: #FFFFFF;
+  font-weight: bold;
+}
+
+.presentation-table tbody tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+.presentation-table tbody tr:hover {
+  background-color: #e6f3ff;
+}
+</style>
 
 
 ## 
@@ -693,7 +719,7 @@ $$ where,
 -   $\boldsymbol{x}_{it}$ is a characteristics vector for the individual $i$ in time $t$ from the Sparse Matrix.
 -   $d2_{t}$ to $dT_{t}$ are time dummy variables.
 -   $IMR_{it}$ corresponds to the Inverse Mills Ratio for the individual $i$ in time $t$.
--   $\mu_{i}$ is the individual effect.
+-   $\mu_{i}$ is the fixed effect.
 
 
 ##  Number of controls selected and estimated by OLS Post-LASSO
@@ -817,21 +843,21 @@ Employers
 
 Increase wage gap:
 
--  Both receive wage premium: Male $\times$ Head of household (-106.53).
+-  Both receive wage premium: Male $\times$ Head of household (**-106.53**).
 
-- Both receive wage penalty: High school $\times$ Araucania Region (208.93).
+- Both receive wage penalty: High school $\times$ Araucania Region (**208.93**).
     
-- Opposite effects: Separated $\times$ Santiago Metropolitan Region (-118.7).
+- Opposite effects: Separated $\times$ Santiago Metropolitan Region (**-118.7**).
 
 Formal workers:
 
-- Increase hourly wage: Separated $\times$ Los Lagos Region (249.5).
-- Decrease hourly wage: Associate Degree $\times$ Valparaiso Region (-169.08).
+- Increase hourly wage: Separated $\times$ Los Lagos Region (**249.5**).
+- Decrease hourly wage: Associate Degree $\times$ Valparaiso Region (**-169.08**).
 
 Informal workers:
 
-- Increase hourly wage: Tarapaca Region $\times$ Seasonal work (235.13).
-- Decrease hourly wage: Married $\times$ Araucania Region (-364).
+- Increase hourly wage: Tarapaca Region $\times$ Seasonal work (**235.13**).
+- Decrease hourly wage: Married $\times$ Araucania Region (**-364**).
 
 </div>
 
@@ -847,7 +873,96 @@ Nonlinear effects are relevant in the log wage generation process for employers,
 \
 Reduce wage gap: Improvements in the efficiency of government spending distribution, focusing it where the wage gap is high.\
 \
-For example, programs to improve the quality of formal employment or make formalization attractive should be implemented on a regional basis.
+For example, programs to improve the quality of formal employment or make formalization attractive should be implemented on a regional basis.\
+
+Five variables that most increase the wage gap for employers:
+
+<table class="presentation-table">
+  <thead>
+    <tr>
+      <th rowspan="2">Variable interaction</th>
+      <th>Formal Coefficient</th>
+      <th>Informal Coefficient</th>
+      <th>Difference</th>
+    </tr>
+    <tr>
+      <th>( <i>β<sub>j</sub></i><sup>F</sup> ≠ 0 )</th>
+      <th>( <i>β<sub>j</sub></i><sup>I</sup> ≠ 0 )</th>
+      <th>( <i>β<sub>j</sub></i><sup>F</sup> − <i>β<sub>j</sub></i><sup>I</sup>)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>High school × Araucania Region</td>
+      <td>-15.1782</td>
+      <td>-224.1111</td>
+      <td>208.9329</td>
+    </tr>
+    <tr>
+      <td>Maule Region × Married</td>
+      <td>-187.3768</td>
+      <td>-38.7877</td>
+      <td>-148.5891</td>
+    </tr>
+    <tr>
+      <td>High school × O'Higgins Region</td>
+      <td>-1.7654</td>
+      <td>-121.0619</td>
+      <td>119.2965</td>
+    </tr>
+    <tr>
+      <td>Separated × Santiago Metropolitan Region</td>
+      <td>-31.3152</td>
+      <td>87.3841</td>
+      <td>-118.6992</td>
+    </tr>
+    <tr>
+      <td>Bachelor's Degree × Married</td>
+      <td>-121.4943</td>
+      <td>-3.8462</td>
+      <td>-117.6481</td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+
+.presentation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin: 1em 0;
+}
+
+.presentation-table th,
+.presentation-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.presentation-table th {
+  background-color: #FFFFFF;
+  font-weight: bold;
+}
+
+.presentation-table tbody tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+.presentation-table tbody tr:hover {
+  background-color: #e6f3ff;
+}
+</style>
+
+## General Conclusions
+
+The effective distribution of public resources to mitigate informality and wage differences between formal and informal workers should take into account a territorial and sectoral focus.\
+
+To mititgate the wage difference formal/informal policymakers should focus on variables affecting both groups.\
+
+The use of high-dimensional methodologies allows us to capture interactive effects that are relevant for understanding complex phenomena such as informality.
+
 
 ## 
 
